@@ -1,6 +1,6 @@
-# NLW_Copa
-JavaScript
-TypeScript
-Node
-SQLite
+# NLW_Copa  
+JavaScript  
+TypeScript  
+Node  
+SQLite  
 Prisma
