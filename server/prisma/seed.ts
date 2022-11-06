@@ -26,7 +26,7 @@ async function main () {
         }
     })
 
-    const game1 = await prisma.game.create({
+    await prisma.game.create({
         data: {
             date: '2022-11-02T12:00:00.201Z',
             firstTeamCountryCode: 'DE',
@@ -34,24 +34,24 @@ async function main () {
         }
     })
 
-    const game2 = await prisma.game.create({
+    await prisma.game.create({
         data: {
-            date: '2022-11-02T12:00:00.201Z',
-            firstTeamCountryCode: 'DE',
-            secondTeamCountryCode: 'BR',
+            date: '2022-12-02T14:00:00.201Z',
+            firstTeamCountryCode: 'BR',
+            secondTeamCountryCode: 'AR',
 
             guesses: {
-                firstTeamPoints: 2,
-                secondTeamPoints: 1,
+                create: {
+                    firstTeamPoints: 2,
+                    secondTeamPoints: 1,
 
-                participant: {
-                    connect: {
-                        userId_poolId: {
-                            userId: user.id,
-                            poolId: pool.id,
+                    participant: {
+                        connect: {
+                            userId_poolId: {
+                                userId: user.id,
+                                poolId: pool.id,
+                            }
                         }
-                        
-
                     }
                 }
             }

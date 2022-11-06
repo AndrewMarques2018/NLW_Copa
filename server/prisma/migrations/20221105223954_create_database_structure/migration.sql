@@ -29,7 +29,7 @@ CREATE TABLE "Guess" (
     "id" TEXT NOT NULL PRIMARY KEY,
     "firstTeamPoints" INTEGER NOT NULL,
     "secondTeamPoints" INTEGER NOT NULL,
-    "createdAt" DATETIME NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "gameId" TEXT NOT NULL,
     "participantId" TEXT NOT NULL,
     CONSTRAINT "Guess_participantId_fkey" FOREIGN KEY ("participantId") REFERENCES "Participant" ("id") ON DELETE RESTRICT ON UPDATE CASCADE,
