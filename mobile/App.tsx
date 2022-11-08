@@ -1,9 +1,12 @@
 import { StatusBar, NativeBaseProvider } from 'native-base';
-import { THEME } from "./src/styles/theme";
-import { useFonts, Roboto_400Regular, Roboto_500Medium, Roboto_700Bold } from "@expo-google-fonts/roboto";
-import { Loading } from './src/components/Loading';
-import { SignIn } from './src/screens/SignIn';
 import { AuthContextProvider } from './src/contexts/AuthContext';
+import { useFonts, Roboto_400Regular, Roboto_500Medium, Roboto_700Bold } from "@expo-google-fonts/roboto";
+
+import { Loading } from './src/components/Loading';
+import { THEME } from "./src/styles/theme";
+import { SignIn } from './src/screens/SignIn';
+import { Find } from './src/screens/Find';
+import { New } from './src/screens/New';
 
 export default function App() {
 
@@ -18,7 +21,7 @@ export default function App() {
         translucent
       />
 
-      { fontsLoaded ? <SignIn></SignIn> : <Loading></Loading> }
+      { fontsLoaded ? <SignIn/> : <Loading></Loading> }
       </AuthContextProvider>
     </NativeBaseProvider>
   );

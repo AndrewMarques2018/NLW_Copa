@@ -13,8 +13,8 @@ export function SignIn(){
         <Logo width={212} height={40}/>
 
         <Button 
-          title='ENTRAR COM GOOGLE'
-          type='SECUNDARY'
+          title=' ENTRAR COM GOOGLE'
+          type='SECONDARY'
           leftIcon={<Icon as={Fontisto} name='google' color='white' size='md'/>}
           mt={12}
           onPress={signIn}

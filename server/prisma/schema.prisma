@@ -14,8 +14,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
-
 model Pool {
   id String @id @default(cuid())
   title String
@@ -50,7 +48,7 @@ model User {
   participatingAt Participant[]
   ownPools Pool[]
 }
-' 
+
 model Game {
   id String @id @default(cuid())
   date DateTime
