@@ -7,6 +7,7 @@ import { THEME } from "./src/styles/theme";
 import { SignIn } from './src/screens/SignIn';
 import { Find } from './src/screens/Find';
 import { New } from './src/screens/New';
+import { Pools } from './src/screens/Pools';
 
 export default function App() {
 
@@ -21,7 +22,7 @@ export default function App() {
         translucent
       />
 
-      { fontsLoaded ? <SignIn/> : <Loading></Loading> }
+      { fontsLoaded ? <Pools/> : <Loading></Loading> }
       </AuthContextProvider>
     </NativeBaseProvider>
   );
