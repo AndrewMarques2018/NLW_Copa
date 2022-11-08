@@ -1,7 +1,7 @@
 import { Center, Text, Icon } from 'native-base'
-import { useAuth } from '../src/hooks/useAuth'
+import { useAuth } from '../hooks/useAuth'
 import { Button } from '../components/Button'
-import Logo from '../src/assets/logo.svg'
+import Logo from '../assets/logo.svg'
 import { Fontisto } from '@expo/vector-icons'
 
 export function SignIn(){
