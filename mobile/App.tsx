@@ -22,7 +22,7 @@ export default function App() {
         translucent
       />
 
-      { fontsLoaded ? <Pools/> : <Loading></Loading> }
+      { fontsLoaded ? <SignIn/> : <Loading></Loading> }
       </AuthContextProvider>
     </NativeBaseProvider>
   );
