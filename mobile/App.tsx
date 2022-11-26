@@ -4,10 +4,7 @@ import { useFonts, Roboto_400Regular, Roboto_500Medium, Roboto_700Bold } from "@
 
 import { Loading } from './src/components/Loading';
 import { THEME } from "./src/styles/theme";
-import { SignIn } from './src/screens/SignIn';
-import { Find } from './src/screens/Find';
-import { New } from './src/screens/New';
-import { Pools } from './src/screens/Pools';
+import { Routes } from './src/routes';
 
 export default function App() {
 
@@ -22,7 +19,7 @@ export default function App() {
         translucent
       />
 
-      { fontsLoaded ? <SignIn/> : <Loading></Loading> }
+      { fontsLoaded ? <Routes/> : <Loading></Loading> }
       </AuthContextProvider>
     </NativeBaseProvider>
   );
